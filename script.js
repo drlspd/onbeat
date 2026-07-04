@@ -4,9 +4,7 @@
 const policeFleet = {
     B: [
         { name: "Dominator GT (Klasa B)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522694700270751794/Zrzut_ekranu_2026-07-03_220256.png?ex=6a496772&is=6a4815f2&hm=475c5379c81ddedf13b39703fc8548129adcb68c3e88efbe5751cf30dd643f7f&" },
-            ],
-    B: [
-            { name: "Tavros (Klasa B)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522837515487154196/Zrzut_ekranu_2026-07-04_073152.png?ex=6a49ec74&is=6a489af4&hm=0d7f2cad7b134768429d0ed987558ac22a0c3119c795bfff2febc82ddb5544ee&" },
+        { name: "Tavros (Klasa B)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522837515487154196/Zrzut_ekranu_2026-07-04_073152.png?ex=6a49ec74&is=6a489af4&hm=0d7f2cad7b134768429d0ed987558ac22a0c3119c795bfff2febc82ddb5544ee&" },
             ],
     C: [
         { name: "Merit PPV (Klasa C)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522694513188012202/Zrzut_ekranu_2026-07-03_220227.png?ex=6a496746&is=6a4815c6&hm=d11e0c267cf2bf4aadafdb8ebd5381eb0c47056bdad84a1e166793f3137d38e9&" },
