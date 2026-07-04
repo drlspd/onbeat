@@ -72,8 +72,8 @@ const heistVehicles = [
 // 3. OSOBNA BAZA SAMOCHODÓW - Z TRACKERA (Inne modyfikacje/klasy)
 // ==========================================
 const trackerVehicles = [
-    { name: "Elegy RH8 [Full Tune / Tracker]", class: "C", img: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=400" },
-    { name: "Sultan RS [Modyfikowany]", class: "C", img: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?q=80&w=400" },
+    { name: "Itali GTB", class: "C", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830304300240997/Zrzut_ekranu_2026-07-04_070343.png?ex=6a49e5bd&is=6a48943d&hm=fa6345964346c2128b203e64ab0e16a2031b85ceb5c8e9b0021f6e68e72b5114&" },
+    { name: "Turismo Omaggio", class: "C", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830690356559964/Zrzut_ekranu_2026-07-04_070522.png?ex=6a49e619&is=6a489499&hm=3e06b083876899724a01ee36dcf1d04f4114912b12ecb349f38b89f88b604567&" },
     { name: "Futo Hatchback [Tracker]", class: "B", img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=400" }
 ];
 
