@@ -12,7 +12,7 @@ const policeFleet = {
     ],
     D: [
         { name: "Vapid Stanier (Klasa D)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522694812552269965/Zrzut_ekranu_2026-07-03_220323.png?ex=6a49678d&is=6a48160d&hm=86be081e89cfbb7865edaf7990a9fd3f1b885119494a44ac0f547821e78cdd62&" },
-        { name: "Regent (Klasa D)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522836877416333492/Zrzut_ekranu_2026-07-04_072957.png?ex=6a49ebdc&is=6a489a5c&hm=cb95e2ebbc644b4b9f5c35eefb4adcdeb6249e9a719e07735112ab70cf26a7ae&" },
+        { name: "Regent (Klasa D)", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522836877416333492/Zrzut_ekranu_2026-07-04_072957.png?ex=6a4b3d5c&is=6a49ebdc&hm=4a1a1fe8257867a0cdf4a095811362fe07d21ec441cef4120c8198d72ef4173e&" },
     ]
 };
 
@@ -75,9 +75,9 @@ const heistVehicles = [
 // 3. OSOBNA BAZA SAMOCHODÓW - Z TRACKERA (Inne modyfikacje/klasy)
 // ==========================================
 const trackerVehicles = [
-    { name: "Itali GTB", class: "C", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830304300240997/Zrzut_ekranu_2026-07-04_070343.png?ex=6a49e5bd&is=6a48943d&hm=fa6345964346c2128b203e64ab0e16a2031b85ceb5c8e9b0021f6e68e72b5114&" },
-    { name: "Turismo Omaggio", class: "C", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830690356559964/Zrzut_ekranu_2026-07-04_070522.png?ex=6a49e619&is=6a489499&hm=3e06b083876899724a01ee36dcf1d04f4114912b12ecb349f38b89f88b604567&" },
-    { name: "Futo Hatchback [Tracker]", class: "B", img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=400" }
+    { name: "Itali GTB", class: "A", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830304300240997/Zrzut_ekranu_2026-07-04_070343.png?ex=6a49e5bd&is=6a48943d&hm=fa6345964346c2128b203e64ab0e16a2031b85ceb5c8e9b0021f6e68e72b5114&" },
+    { name: "Turismo Omaggio", class: "A", img: "https://cdn.discordapp.com/attachments/1387667672011116605/1522830690356559964/Zrzut_ekranu_2026-07-04_070522.png?ex=6a49e619&is=6a489499&hm=3e06b083876899724a01ee36dcf1d04f4114912b12ecb349f38b89f88b604567&" },
+    { name: "Futo Hatchback [Tracker]", class: "A", img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=400" }
 ];
 
 // Zmienna przechowująca aktualnie wybraną bazę danych (domyślnie napady)
