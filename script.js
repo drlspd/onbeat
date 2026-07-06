@@ -5,14 +5,15 @@ const policeFleet = {
     A: [
         { name: "Dominator GT (Klasa B)", img: "https://zapodaj.net/images/4d163f25cb83e.png" },
         { name: "Tavros (Klasa B)", img: "https://zapodaj.net/images/c2c3e7b5c9239.png" },
-        { name: "VSTR (Klasa B)", img: "" },
+        { name: "VSTR (Klasa B)", img: "https://zapodaj.net/images/f8a6e8f5fecd7.png" },
+        { name: "Scout (Klasa B)", img: "https://zapodaj.net/images/299142484d4d5.png" },
     ],
     
     B: [
         { name: "Dominator GT (Klasa B)", img: "https://zapodaj.net/images/4d163f25cb83e.png" },
         { name: "Tavros (Klasa B)", img: "https://zapodaj.net/images/c2c3e7b5c9239.png" },
-        { name: "VSTR (Klasa B)", img: "" },
-        { name: "Scout (Klasa B)", img: "" },
+        { name: "VSTR (Klasa B)", img: "https://zapodaj.net/images/f8a6e8f5fecd7.png" },
+        { name: "Scout (Klasa B)", img: "https://zapodaj.net/images/299142484d4d5.png" },
     ],
     C: [
         { name: "Merit PPV (Klasa C)", img: "https://zapodaj.net/images/b031e19c2cdd3.png" },
