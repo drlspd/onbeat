@@ -1,91 +1,92 @@
 // ==========================================
-// 1. FLOTA RADIOWOZÓW LSPD
+// 1. FLOTA RADIOWOZÓW LSPD (Słownik referencyjny)
+// Przechowujemy tu tylko dane techniczne radiowozów (zdjęcia).
+// Dzięki temu nie musisz powtarzać linków do zdjęć poniżej.
 // ==========================================
 const policeFleet = {
-    A: [
-        { name: "Dominator GT (Klasa B)", img: "https://zapodaj.net/images/4d163f25cb83e.png" },
-        { name: "Tavros (Klasa B)", img: "https://zapodaj.net/images/c2c3e7b5c9239.png" },
-        { name: "VSTR (Klasa B)", img: "https://zapodaj.net/images/f8a6e8f5fecd7.png" },
-        { name: "Scout (Klasa B)", img: "https://zapodaj.net/images/299142484d4d5.png" },
-    ],
-    
-    B: [
-        { name: "Dominator GT (Klasa B)", img: "https://zapodaj.net/images/4d163f25cb83e.png" },
-        { name: "Tavros (Klasa B)", img: "https://zapodaj.net/images/c2c3e7b5c9239.png" },
-        { name: "VSTR (Klasa B)", img: "https://zapodaj.net/images/f8a6e8f5fecd7.png" },
-        { name: "Scout (Klasa B)", img: "https://zapodaj.net/images/299142484d4d5.png" },
-    ],
-    C: [
-        { name: "Merit PPV (Klasa C)", img: "https://zapodaj.net/images/b031e19c2cdd3.png" },
-        { name: "Aleutian (Klasa C)", img: "https://zapodaj.net/images/980f9096f7827.png" },
-        { name: "Dominator GSX (Klasa C)", img: "" },
-    ],
-    D: [
-        { name: "Vapid Stanier (Klasa D)", img: "https://zapodaj.net/images/41a0d057bdc84.png" },
-        { name: "Regent (Klasa D)", img: "https://zapodaj.net/images/cd998aef9cb24.png" },
-    ]
+    "Dominator GT": "https://zapodaj.net/images/4d163f25cb83e.png",
+    "Tavros": "https://zapodaj.net/images/c2c3e7b5c9239.png",
+    "VSTR": "https://zapodaj.net/images/f8a6e8f5fecd7.png",
+    "Scout": "https://zapodaj.net/images/299142484d4d5.png",
+    "Merit PPV": "https://zapodaj.net/images/b031e19c2cdd3.png",
+    "Aleutian": "https://zapodaj.net/images/980f9096f7827.png",
+    "Dominator GSX": "https://zapodaj.net/images/0245e6b820474.png",
+    "Vapid Stanier": "https://zapodaj.net/images/41a0d057bdc84.png",
+    "Regent": "https://zapodaj.net/images/cd998aef9cb24.png"
 };
 
 // ==========================================
 // 2. BAZA SAMOCHODÓW - BAZA Z NAPADÓW
+// W polu 'police' wpisujesz dokładnie, które radiowozy mają wyjechać!
 // ==========================================
 const heistVehicles = [
-    { name: "Pegassi Toros", class: "B", img: "https://zapodaj.net/images/d4fab46e3405a.png" },
-    { name: "Annis ZR350", class: "B", img: "https://zapodaj.net/images/2eb9a12dabd78.png" },
-    { name: "Toundra Panthere", class: "B", img: "https://zapodaj.net/images/a1f0d17ea489c.png" },
-    { name: "Grotti Furia", class: "B", img: "https://zapodaj.net/images/1fec3557533cd.png" },
-    { name: "Obey 8F Drafter", class: "B", img: "https://zapodaj.net/images/18768fc1b212d.png" },
-    { name: "Pfister Comet S2 Cabrio", class: "B", img: "https://zapodaj.net/images/77ebf7f7f95fc.png" },
-    { name: "Pfister Comet S2", class: "B", img: "https://zapodaj.net/images/7e24fd72252e1.png" },
-    { name: "Lampadati Cinquemila", class: "B", img: "https://zapodaj.net/images/93be132683918.png" },
-    { name: "Pfister Comet", class: "C", img: "https://zapodaj.net/images/1e4e7363e7a89.png" },
-    { name: "Annis Elegy RH8", class: "C", img: "https://zapodaj.net/images/0af9a9e4e241a.png" },
-    { name: "Obey Argento 2F", class: "C", img: "https://zapodaj.net/images/6ef661f86ecc4.png" },
-    { name: "Pfister Comet Classic", class: "C", img: "https://zapodaj.net/images/7f3e900c475ee.png" },
-    { name: "Pfister Comet S1 Turbo", class: "C", img: "https://zapodaj.net/images/bb6ac83faa6ed.png" },
-    { name: "Annis Mochi", class: "C", img: "https://zapodaj.net/images/7d2ad2d9d9cef.png" },
-    { name: "Grotti Turismo 300GT", class: "C", img: "https://zapodaj.net/images/992aac6f3f1b0.png" },
-    { name: "Grotti Turismo 300GT Spider", class: "C", img: "https://zapodaj.net/images/e7357a5ab16dc.png" },
-    { name: "Bravado Banshee S", class: "C", img: "https://zapodaj.net/images/e7e83ef085684.png" },
-    { name: "BF Club XR", class: "C", img: "https://zapodaj.net/images/fe269007a252f.png" },
-    { name: "Gallivanter Baller LE", class: "C", img: "https://zapodaj.net/images/3eb70767c20eb.png" },
-    { name: "Pfister Comet SR", class: "C", img: "https://zapodaj.net/images/88e86103b379f.png" },
-    { name: "Benefactor Dubsta", class: "C", img: "https://zapodaj.net/images/aaff7580a7517.png" },
-    { name: "Benefactor Feltzer", class: "C", img: "https://zapodaj.net/images/fd25718a51ff9.png" },
-    { name: "Pfister Neon", class: "C", img: "https://zapodaj.net/images/cef5754cadab7.png" },
-    { name: "Enus Paragon R", class: "C", img: "https://zapodaj.net/images/2660cd9998fcb.png" },
-    { name: "Pegassi Reaper", class: "C", img: "https://zapodaj.net/images/02234e8b8ed9a.png" },
-    { name: "Karin Sultan", class: "C", img: "https://zapodaj.net/images/2a37bd5e0d145.png" },
-    { name: "Declasse Vamos", class: "C", img: "https://zapodaj.net/images/4e7f8cc743adf.png" },
-    { name: "Rune Cheburek", class: "D", img: "https://zapodaj.net/images/d298eab449b29.png" },
-    { name: "Grotti Brioso Fulmine", class: "D", img: "https://zapodaj.net/images/32ba109394ff7.png" },
-    { name: "Annis Elegy RH2", class: "D", img: "https://zapodaj.net/images/fa940e9767479.png" },
-    { name: "Coil Eon", class: "D", img: "https://zapodaj.net/images/8eff37ff3ce32.png" },
-    { name: "Dundreary Hades", class: "D", img: "https://zapodaj.net/images/005596cdd2ae0.png" },
-    { name: "Declasse Impaler LE", class: "D", img: "https://zapodaj.net/images/f22c863c2ccbf.png" },
-    { name: "Lampadati Komoda GT", class: "D", img: "https://zapodaj.net/images/ab8654ac35547.png" },
-    { name: "Annis Rumina", class: "D", img: "https://zapodaj.net/images/d78b13b768099.png" },
-    { name: "Albany Alpha", class: "D", img: "https://zapodaj.net/images/de48569fb54f6.png" },
-    { name: "Maxwell Asbo", class: "D", img: "https://zapodaj.net/images/2f214a7e468d3.png" },
-    { name: "Declasse Asea", class: "D", img: "https://zapodaj.net/images/c5dc8edfd4664.png" },
-    { name: "Karin Asterope", class: "D", img: "https://zapodaj.net/images/daf177aed8d34.png" },
-    { name: "Gallivanter Baller", class: "D", img: "https://zapodaj.net/images/7e4b3e345243f.png" },
-    { name: "Bravado Banshee", class: "D", img: "https://zapodaj.net/images/d9b7abc2cb026.png" },
-    { name: "Enus Cognoscenti Cabrio", class: "D", img: "https://zapodaj.net/images/af3d422497700.png" },
-    { name: "Dewbauchee Exemplar", class: "D", img: "https://zapodaj.net/images/07cec3df87257.png" },
-    { name: "Lampadati Felon", class: "D", img: "https://zapodaj.net/images/397e4e464b134.png" },
-    { name: "Cheval Fugitive", class: "D", img: "https://zapodaj.net/images/6a5abf3ef7cdb.png" },
-    { name: "Karin Vivanite", class: "D", img: "https://zapodaj.net/images/b089e63ebfb7e.png" },
+    // KLASA B - Przykład: wyjeżdżają tylko Dominator GT i Tavros
+    { name: "Pegassi Toros", class: "B", img: "https://zapodaj.net/images/d4fab46e3405a.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Annis ZR350", class: "B", img: "https://zapodaj.net/images/2eb9a12dabd78.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Toundra Panthere", class: "B", img: "https://zapodaj.net/images/a1f0d17ea489c.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Grotti Furia", class: "B", img: "https://zapodaj.net/images/1fec3557533cd.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Obey 8F Drafter", class: "B", img: "https://zapodaj.net/images/18768fc1b212d.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Pfister Comet S2 Cabrio", class: "B", img: "https://zapodaj.net/images/77ebf7f7f95fc.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Pfister Comet S2", class: "B", img: "https://zapodaj.net/images/7e24fd72252e1.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
+    { name: "Lampadati Cinquemila", class: "B", img: "https://zapodaj.net/images/93be132683918.png", police: ["Dominator GT", "Tavros", "VSTR", "Scout"] },
     
+    // KLASA C - Przykład: wyjeżdżają Merit PPV i Aleutian
+    { name: "Pfister Comet", class: "C", img: "https://zapodaj.net/images/1e4e7363e7a89.png", police: ["Merit PPV", "Aleutian"] },
+    { name: "Annis Elegy RH8", class: "C", img: "https://zapodaj.net/images/0af9a9e4e241a.png", police: ["Merit PPV", "Dominator GSX"] },
+    { name: "Obey Argento 2F", class: "C", img: "https://zapodaj.net/images/6ef661f86ecc4.png", police: ["Aleutian"] },
+    { name: "Pfister Comet Classic", class: "C", img: "https://zapodaj.net/images/7f3e900c475ee.png", police: ["Dominator GSX"] },
+    { name: "Pfister Comet S1 Turbo", class: "C", img: "https://zapodaj.net/images/bb6ac83faa6ed.png", police: ["Merit PPV"] },
+    { name: "Annis Mochi", class: "C", img: "https://zapodaj.net/images/7d2ad2d9d9cef.png", police: ["Merit PPV", "Aleutian"] },
+    { name: "Grotti Turismo 300GT", class: "C", img: "https://zapodaj.net/images/992aac6f3f1b0.png", police: ["Dominator GSX"] },
+    { name: "Grotti Turismo 300GT Spider", class: "C", img: "https://zapodaj.net/images/e7357a5ab16dc.png", police: ["Merit PPV", "Aleutian"] },
+    { name: "Bravado Banshee S", class: "C", img: "https://zapodaj.net/images/e7e83ef085684.png", police: ["Merit PPV"] },
+    { name: "BF Club XR", class: "C", img: "https://zapodaj.net/images/fe269007a252f.png", police: ["Aleutian"] },
+    { name: "Gallivanter Baller LE", class: "C", img: "https://zapodaj.net/images/3eb70767c20eb.png", police: ["Aleutian", "Merit PPV"] },
+    { name: "Pfister Comet SR", class: "C", img: "https://zapodaj.net/images/88e86103b379f.png", police: ["Merit PPV"] },
+    { name: "Benefactor Dubsta", class: "C", img: "https://zapodaj.net/images/aaff7580a7517.png", police: ["Aleutian"] },
+    { name: "Benefactor Feltzer", class: "C", img: "https://zapodaj.net/images/fd25718a51ff9.png", police: ["Merit PPV"] },
+    { name: "Pfister Neon", class: "C", img: "https://zapodaj.net/images/cef5754cadab7.png", police: ["Dominator GSX"] },
+    { name: "Enus Paragon R", class: "C", img: "https://zapodaj.net/images/2660cd9998fcb.png", police: ["Merit PPV", "Aleutian"] },
+    { name: "Pegassi Reaper", class: "C", img: "https://zapodaj.net/images/02234e8b8ed9a.png", police: ["Merit PPV", "Dominator GSX"] },
+    { name: "Karin Sultan", class: "C", img: "https://zapodaj.net/images/2a37bd5e0d145.png", police: ["Merit PPV", "Aleutian"] },
+    { name: "Declasse Vamos", class: "C", img: "https://zapodaj.net/images/4e7f8cc743adf.png", police: ["Merit PPV"] },
+    
+    // KLASA D - Przykład: wyjeżdżają Vapid Stanier i Regent
+    { name: "Rune Cheburek", class: "D", img: "https://zapodaj.net/images/d298eab449b29.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Grotti Brioso Fulmine", class: "D", img: "https://zapodaj.net/images/32ba109394ff7.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Annis Elegy RH2", class: "D", img: "https://zapodaj.net/images/fa940e9767479.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Coil Eon", class: "D", img: "https://zapodaj.net/images/8eff37ff3ce32.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Dundreary Hades", class: "D", img: "https://zapodaj.net/images/005596cdd2ae0.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Declasse Impaler LE", class: "D", img: "https://zapodaj.net/images/f22c863c2ccbf.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Lampadati Komoda GT", class: "D", img: "https://zapodaj.net/images/ab8654ac35547.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Annis Rumina", class: "D", img: "https://zapodaj.net/images/d78b13b768099.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Albany Alpha", class: "D", img: "https://zapodaj.net/images/de48569fb54f6.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Maxwell Asbo", class: "D", img: "https://zapodaj.net/images/2f214a7e468d3.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Declasse Asea", class: "D", img: "https://zapodaj.net/images/c5dc8edfd4664.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Karin Asterope", class: "D", img: "https://zapodaj.net/images/daf177aed8d34.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Gallivanter Baller", class: "D", img: "https://zapodaj.net/images/7e4b3e345243f.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Bravado Banshee", class: "D", img: "https://zapodaj.net/images/d9b7abc2cb026.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Enus Cognoscenti Cabrio", class: "D", img: "https://zapodaj.net/images/af3d422497700.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Dewbauchee Exemplar", class: "D", img: "https://zapodaj.net/images/07cec3df87257.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Lampadati Felon", class: "D", img: "https://zapodaj.net/images/397e4e464b134.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Cheval Fugitive", class: "D", img: "https://zapodaj.net/images/6a5abf3ef7cdb.png", police: ["Vapid Stanier", "Regent"] },
+    { name: "Karin Vivanite", class: "D", img: "https://zapodaj.net/images/b089e63ebfb7e.png", police: ["Vapid Stanier", "Regent"] }
 ];
 
 // ==========================================
-// 3. OSOBNA BAZA SAMOCHODÓW - Z TRACKERA (Inne modyfikacje/klasy)
+// 3. OSOBNA BAZA SAMOCHODÓW - Z TRACKERA
 // ==========================================
 const trackerVehicles = [
-    { name: "Itali GTB", class: "A", img: "https://zapodaj.net/images/84a381640b3f0.png" },
-    { name: "Turismo Omaggio", class: "A", img: "https://zapodaj.net/images/8b9ce5efc7a95.png" },
-    
+    // Dla aut z trackera też możesz przypisać unikalny zestaw, np. tylko szybkie fury z Klasy B
+    { name: "Itali GTB", class: "A", img: "https://zapodaj.net/images/84a381640b3f0.png", police: ["Tavros", "VSTR", "Scout"] },
+    { name: "Turismo Omaggio", class: "A", img: "https://zapodaj.net/images/8b9ce5efc7a95.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Calico", class: "A", img: "https://zapodaj.net/images/9280100574720.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Vectre", class: "A", img: "https://zapodaj.net/images/76214c06ff415.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Turismo", class: "A", img: "https://zapodaj.net/images/c93d24b54aed3.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Jugular", class: "A", img: "https://zapodaj.net/images/cb64fca0338ed.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Gauntlet", class: "A", img: "https://zapodaj.net/images/c196f31ddb5fa.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Ellie", class: "A", img: "https://zapodaj.net/images/da727980ee0d5.png", police: ["Dominator GT", "Tavros", "Scout"] },
+    { name: "Penumbra", class: "A", img: "https://zapodaj.net/images/7f1b6c86bf540.png", police: ["Dominator GT", "Tavros", "Scout"] },
 ];
 
 // Zmienna przechowująca aktualnie wybraną bazę danych (domyślnie napady)
@@ -174,6 +175,7 @@ function renderDropdown(filterText = "") {
     });
 }
 
+// NOWA LOGIKA DOPASOWANIA PRECYZYJNEGO
 function selectVehicle(vehicle) {
     searchInput.value = vehicle.name;
 
@@ -186,18 +188,24 @@ function selectVehicle(vehicle) {
     `;
     suspectBox.classList.remove('hidden');
 
-    const matchingPolice = policeFleet[vehicle.class];
     policeDisplay.innerHTML = '';
 
-    matchingPolice.forEach(copCar => {
+    // Pobieramy tablicę spersonalizowanych radiowozów przypisanych bezpośrednio do wybranego auta
+    const assignedPolice = vehicle.police || [];
+
+    assignedPolice.forEach(copCarName => {
+        // Pobieramy link do zdjęcia ze słownika na górze na podstawie nazwy radiowozu
+        const imgUrl = policeFleet[copCarName] || "";
+        
         const card = document.createElement('div');
         card.className = 'vehicle-card';
         card.innerHTML = `
-            <h4>${copCar.name}</h4>
-            <img src="${copCar.img}" alt="${copCar.name}" onerror="this.src='https://placehold.co/400x250?text=Blad+Zdjecia'">
+            <h4>${copCarName}</h4>
+            <img src="${imgUrl}" alt="${copCarName}" onerror="this.src='https://placehold.co/400x250?text=Blad+Zdjecia'">
         `;
         policeDisplay.appendChild(card);
     });
+    
     policeBox.classList.remove('hidden');
 }
 
